@@ -4782,6 +4782,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .navbar-inner {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   background-color: rgb(35,35,35);
  }
 

@@ -965,7 +965,8 @@
   }
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
-    padding: 5px;
+//    padding: 5px;
+    min-width: 270px;
   }
   .navbar .container {
     width: auto;
@@ -977,7 +978,7 @@
     margin: 0 0 0 -5px;
   }
   .nav-collapse {
-    clear: both;
+//    clear: both;
   }
   .nav-collapse .nav {
     float: none;
@@ -1089,11 +1090,12 @@
   }
   .nav-collapse,
   .nav-collapse.collapse {
-    height: 0;
-    overflow: hidden;
+    padding: 7px;
+//    height: 0;
+//    overflow: hidden;
   }
   .navbar .btn-navbar {
-    display: block;
+    display: none;
   }
   .navbar-static .navbar-inner {
     padding-right: 10px;
