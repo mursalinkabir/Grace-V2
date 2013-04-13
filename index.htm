@@ -24,7 +24,7 @@
 jQuery(document).ready(function($){
 
   /* prepend menu icon */
-  $('.nav-collapse.collapse').prepend('<div id="menu-icon">Menu</div>');
+  $('.nav-collapse.collapse').prepend('<div id="menu-icon"></div>');
 
   /* toggle nav */
   $("#menu-icon").on("click", function(){
@@ -59,8 +59,15 @@ jQuery(document).ready(function($){
                     <div class="nav-collapse collapse">
                         <div id='cssmenu'>
                             <ul>
+
                                 <li class='active'>
-                                    <a href='index.html'><span>Pages</span></a>
+
+                                    <a href='index.html'><img src="img/home.png"><span>Home</span></a>
+
+                                </li>
+
+                                <li class='active'>
+                                    <a href='index.html'><img src="img/page.png"><span>Pages</span></a>
                                     <ul>
                                         <li class='has-sub'><a href='#'><span>Home</span></a></li>
                                         <li class='has-sub'><a href='#'><span>Blog</span></a></li>
@@ -69,7 +76,7 @@ jQuery(document).ready(function($){
                                     </ul>
                                 </li>
                                 <li class='has-sub'>
-                                    <a href='#'><span>Products</span></a>
+                                    <a href='#'><img src="img/basket.png"><span>Products</span></a>
                                     <ul>
                                         <li class='has-sub'>
                                             <a href='#'><span>Phones</span></a>
@@ -87,8 +94,8 @@ jQuery(document).ready(function($){
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href='#'><span>About</span></a></li>
-                                <li class='last'><a href='#'><span>Contact</span></a></li>
+                                <li><a href='#'><img src="img/info.png"><span>About</span></a></li>
+                                <li class='last'><a href='#'><img src="img/contact.png"><span>Contact</span></a></li>
                             </ul>
                         </div>
                         <!--

@@ -1,16 +1,79 @@
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
 
-#cssmenu ul { margin: 0; padding: 0;}
-#cssmenu li { margin: 0; padding: 0;}
-#cssmenu a { margin: 0; padding: 0;}
+  .nav-collapse.collapse {
+        position: relative;
+    }
+
+ #menu-icon {
+        float: right;
+        color: #000;
+        width: 30px;
+        height: 30px;
+        background: #ecebeb url(../img/menu-icon.png) no-repeat 10px center;
+        padding: 2px;
+        cursor: pointer;
+        border: solid 1px #666;
+        display: block; /* show menu icon */
+    }
+    #menu-icon:hover {
+        background-color: #f8f8f8;
+    }
+    #menu-icon.active {
+        background-color: #bbb;
+    }
+
+#cssmenu ul { margin: 0; padding: 0;
+ display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    }
+#cssmenu li { padding: 0;
+ display: -webkit-box;
+    display: -moz-box;
+    display: box;
+ clear: both;
+        float: none;
+        margin: 5px 0 5px 10px;
+
+}
+#cssmenu a { margin: 0; padding: 0;
+ display: -webkit-box;
+    display: -moz-box;
+    display: box;}
 #cssmenu ul {list-style: none;
+ display: -webkit-box;
+    display: -moz-box;
 
+    box-orient: vertical;
+-webkit-box-orient: vertical;
+-moz-box-orient: vertical;
+
+
+    display: box;
+      width: auto;
+
+ //       position: static;
+
+        border: none;
+        background: inherit;
 }
 #cssmenu a {text-decoration: none;}
 #cssmenu {
-    height: auto; background-color: rgb(35,35,35);
+    height:auto;
+    right: 7px;
+    clear: both;
+    color: rgb(220,220,220);
+    position: absolute;
+    top: 45px;
+    width: auto;
+    z-index: 10000;
+    padding: 5px;
+    background: rgb(35,35,35);
+    border: solid 1px #999;
+    display: none; /* visibility will be toggled with jquery */
 
+    background-color: rgb(35,35,35);
     float: left;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 
@@ -18,14 +81,25 @@
 
 
 #cssmenu > ul > li {
-    display: block;
+    border-radius: 5px;
+
+    height:auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
     text-transform: uppercase;
     box-shadow: none;
     border-top: none;
     float: none;
-    padding-left: 5px;
-    position: relative;
-
+    -webkit-box-pack:center;
+    -moz-box-pack:center;
+    box-pack:center;
+     box-orient: vertical;
+-webkit-box-orient: vertical;
+-moz-box-orient: vertical;
+    padding-left: 0px;
+ //   position: relative;
+margin: 0px 0 0px 0px;
 -webkit-transition: none;
    -moz-transition: none;
      -o-transition: none;
@@ -35,13 +109,13 @@
 }
 
 #cssmenu > ul > li:hover{
-    border-top: none;
+
     box-shadow: none;
 
     background-repeat: no-repeat;
     float: none;
-   padding-left: 5px;
-    position: relative;
+   padding-left: 0px;
+//    position: relative;
 
 
 -webkit-transition: none;
@@ -55,19 +129,86 @@
 
 #cssmenu > ul > li > a {
 
+ font: inherit;
+        background: none;
+         display: -webkit-box;
+    display: -moz-box;
+    display: box;
+        padding: 0;
+        color: #666;
+        border: none;
+
     font-size: 20px;
-    line-height: 50px;
-    padding: 5px 5px;
+
+
 -webkit-transition: none;
    -moz-transition: none;
      -o-transition: none;
         transition: none;
 }
 
-#cssmenu > ul > li > a:hover {color: rgb(250,250,250); }
+
+#cssmenu > ul > li > a > img{
+
+
+    display: none;
+
+
+
+
+
+}
+
+#cssmenu > ul > li:hover > a > img{
+
+    display: none;
+
+
+}
+
+#cssmenu > ul > li > a > span{
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    color: white;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+
+    -webkit-transition: color 0.5s;
+   -moz-transition: color 0.5s;
+     -o-transition: color 0.5s;
+        transition: color 0.5s;
+
+}
+
+#cssmenu > ul > li:hover > a > span{
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    color: white;
+    background-color: transparent;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+
+   -webkit-transition: color 0.5s;
+   -moz-transition: color 0.5s;
+     -o-transition: color 0.5s;
+        transition: color 0.5s;
+
+}
+
+
+#cssmenu > ul > li > a:hover {color: rgb(35,35,35); }
 
 
 #cssmenu > ul > li > ul {
+     display: -webkit-box;
+    display: -moz-box;
+    display: box;
     opacity: 1;
     visibility: visible;
     padding: 0px 10px 0px 0px;
@@ -82,15 +223,18 @@
    -moz-transition: none;
      -o-transition: none;
         transition: none;
--webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-        border-radius: 5px;
+-webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+        border-radius: 0px;
 -webkit-box-shadow: none;
    -moz-box-shadow: none;
         box-shadow: none;
 }
 
 #cssmenu > ul > li:hover > ul {
+     display: -webkit-box;
+    display: -moz-box;
+    display: box;
     opacity: 1;
      padding: 0px 10 20px 0;
     top: 0px;
@@ -99,7 +243,7 @@
 
 #cssmenu > ul > li > ul:before{
     content: '';
-    display: block;
+     display: none;
     border-color: transparent transparent rgb(250,250,250) transparent;
     border-style: solid;
     border-width: 10px;
@@ -109,15 +253,25 @@
     margin-left: -10px;
 }
 
-#cssmenu > ul ul > li { position: relative;}
+#cssmenu > ul ul > li {
+     display: -webkit-box;
+    display: -moz-box;
+    display: box;
+//    position: relative;
+}
 
 #cssmenu ul ul a{
-    color: rgb(50,50,50);
+    color: #33b5e5;
     text-transform: none;
     font-size: 17px;
-    background-color: rgb(250,250,250);
-    padding: 10px 8px 10px 16px;
-    display: block;
+    background-color: inherit;
+    padding: 5px 8px 5px 16px;
+     display: -webkit-box;
+    display: -moz-box;
+    display: box;
+     -webkit-box-flex:1;
+    -moz-box-flex:1;
+    box-flex:1;
 
 -webkit-transition: background-color .1s;
    -moz-transition: background-color .1s;
@@ -125,17 +279,20 @@
         transition: background-color .1s;
 }
 
-#cssmenu ul ul a:hover {background-color: rgb(240,240,240); }
+
 
 
 #cssmenu ul ul ul {
-    visibility: hidden;
+     display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    visibility: visible;
     opacity: 0;
-    position: absolute;
+//  position: absolute;
     top: -16px;
     left: 206px;
     padding: 16px 0 20px 0;
-    background-color: rgb(250,250,250);
+    background-color: rgb(35,35,35);
     text-align: left;
     width: auto;
 -webkit-transition: all .3s;
@@ -155,84 +312,24 @@
 
 
 #cssmenu ul ul a:hover{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    box-flex:1;
+
     background-color: #33b5e5;
     color: rgb(240,240,240);
 }
 
 
-    /* nav-wrap */
-    .nav-collapse.collapse {
-        position: relative;
-    }
 
-    /* menu icon */
-    #menu-icon {
-        float: right;
-        color: #000;
-        width: 42px;
-        height: 30px;
-        background: #ecebeb url(../img/menu-icon.png) no-repeat 10px center;
-        padding: 8px 10px 0 42px;
-        cursor: pointer;
-        border: solid 1px #666;
-        display: block; /* show menu icon */
-    }
-    #menu-icon:hover {
-        background-color: #f8f8f8;
-    }
-    #menu-icon.active {
-        background-color: #bbb;
-    }
-
-    /* main nav */
-    #cssmenu {
-        right: 7px;
-        clear: both;
-        color: rgb(220,220,220);
-        position: absolute;
-        top: 45px;
-        width: 160px;
-        z-index: 10000;
-        padding: 5px;
-        background: rgb(35,35,35);
-        border: solid 1px #999;
-        display: none; /* visibility will be toggled with jquery */
-    }
-    #cssmenu li {
-        clear: both;
-        float: none;
-        margin: 5px 0 5px 10px;
-    }
-    #cssmenu a,
-    #cssmenu ul a {
-        font: inherit;
-        background: none;
-        display: inline;
-        padding: 0;
-        color: #666;
-        border: none;
-    }
-    #cssmenu a:hover,
-    #cssmenu ul a:hover {
-        background: none;
-        color: #000;
-    }
-
-    /* dropdown */
-    #cssmenu ul {
-        width: auto;
-        position: static;
-        display: block;
-        border: none;
-        background: inherit;
-    }
-    #cssmenu ul li {
-        margin: 0px 0 0px 0px;
-    }
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 610px) {
 
     /* ensure #nav is visible on desktop version */
 
