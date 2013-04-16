@@ -1,87 +1,86 @@
-#cssmenu ul { margin: 0; padding: 0;}
-#cssmenu li { margin: 0; padding: 0;}
-#cssmenu a { margin: 0; padding: 0;}
-#cssmenu ul {list-style: none;}
-#cssmenu a {text-decoration: none;}
+#cssmenu ul { margin: 0; padding: 0;display:block;}
+#cssmenu li { margin: 0; padding: 0; display:block;}
+#cssmenu a { display:block; margin: 0; padding: 0;}
+#cssmenu ul {list-style: none;display:block;}
+#cssmenu a {text-decoration: none;display:block;}
 #cssmenu {
-    height: 100px; background-color: rgb(35,35,35);
+
+    color: rgb(50,50,50);
+    background-image: url(../stripes.gif);
+    background-repeat: all;
+    display:block;
+    height: 100px; background-color: transparent;
     /*box-shadow: 0px 2px 3px rgba(0,0,0,.4);*/
     float: right;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+     font-family: 'Yanone Kaffeesatz', sans-serif;
+
     }
 
 
 #cssmenu > ul > li {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-
+    display: block;
+    width:120px;
     height: 100px;
     text-transform: uppercase;
-    background-color: rgb(35,35,35);
-    box-shadow: 0px 0px 50px 30px rgb(35,35,35) inset;
-//    border-top: 7px solid rgb(35,35,35);
+ //   background-color: rgb(250,250,250);
+
+
+
+ border-bottom: 6px solid transparent;
+
     float: left;
-//    padding-left: 15px;
+
     position: relative;
 
--webkit-transition: background-color .5s;
-   -moz-transition: background-color .5s;
-     -o-transition: background-color .5s;
-        transition: background-color .5s;
+    -webkit-transition: background-color 0.9s, border-bottom 0.9s, height 0.9s;
+    -moz-transition: background-color 0.9s, border-bottom 0.9s;
+    transition: background-color 0.9s, border-bottom 0.9s;
 
 
 }
 
 #cssmenu > ul > li:hover{
 
-     box-shadow: 0px 0px 50px 30px rgb(35,35,35) inset;
-    background-color: #aaa;
-    background-repeat: no-repeat;
+    display:block;
+    opacity: 0.7;
+    height: 120px;
+    background-color: rgb(220,220,220);
     float: left;
-
+       border-bottom: 6px solid #33b5e5;
     position: relative;
+ //   color: white;
 
 
--webkit-transition: background-color .5s;
-   -moz-transition: background-color .5s;
-     -o-transition: background-color .5s;
-        transition: background-color .5s;
+  -webkit-transition: background-color 0.9s, border-bottom 0.9s;
+    -moz-transition: background-color 0.9s, border-bottom 0.9s;
+    transition: background-color 0.9s, border-bottom 0.9s;
+
+
+
 
 }
 
 
 #cssmenu > ul > li > a {
 
-     display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    color: rgb(160,160,160);
+   display: block;
 
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
+    color: rgb(50,50,50);
+    height: 100px;
 
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
+
 
     font-size: 20px;
 
     padding: 10px 20px;
--webkit-transition: color .15s;
-   -moz-transition: color .15s;
-     -o-transition: color .15s;
-        transition: color .15s;
+
 }
 
-#cssmenu > ul > li > a > img{
+#cssmenu > ul > li > a  img{
 
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-
+   display: block;
+    margin: auto;
 
     width:32px;
     height:auto;
@@ -89,7 +88,7 @@
 
 }
 
-#cssmenu > ul > li:hover > a > img{
+#cssmenu > ul > li:hover > a  img{
 
 
 
@@ -101,148 +100,106 @@
 #cssmenu .iconwrapper
 {
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: box;
+   display: block
 
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    box-pack: center;
+
 
 
 }
 
 #cssmenu > ul > li > a > span{
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    color: rgb(200,200,200);
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-
+   display: block;
+    text-align: center;
     padding: 10px;
 
-    -webkit-transition: color 0.5s;
-   -moz-transition: color 0.5s;
-     -o-transition: color 0.5s;
-        transition: color 0.5s;
 
 }
 
 #cssmenu > ul > li:hover > a > span{
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    color: white;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-padding: 10px;
-   -webkit-transition: color 0.5s;
-   -moz-transition: color 0.5s;
-     -o-transition: color 0.5s;
-        transition: color 0.5s;
+
+
+
 
 }
 
-#cssmenu > ul > li > a:hover {color: rgb(250,250,250); }
+
 
 
 #cssmenu > ul > li > ul {
+    left: -30px;
+    display: none;
     opacity: 0;
     visibility: hidden;
     padding: 16px 0 20px 0;
     background-color: rgb(250,250,250);
     text-align: left;
-    position: absolute;
-    top: 105px;
-    left: 50%;
-    margin-left: -90px;
+    position: relative;
+
+
+
     width: 180px;
--webkit-transition: all .3s .1s;
-   -moz-transition: all .3s .1s;
-     -o-transition: all .3s .1s;
-        transition: all .3s .1s;
--webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-        border-radius: 5px;
--webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
-   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
-        box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+
+
 }
 
 #cssmenu > ul > li:hover > ul {
+
+
     opacity: 1;
-    top: 105px;
+    display:inline-block;
     visibility: visible;
 }
 
-#cssmenu > ul > li > ul:before{
-    content: '';
-    display: block;
-    border-color: transparent transparent rgb(250,250,250) transparent;
-    border-style: solid;
-    border-width: 10px;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    margin-left: -10px;
-}
 
-#cssmenu > ul ul > li { position: relative;}
+
+
+#cssmenu > ul ul > li { display:block; position: relative;}
 
 #cssmenu ul ul a{
-    color: rgb(50,50,50);
+
     text-transform: none;
     font-size: 17px;
     background-color: rgb(250,250,250);
-    padding: 10px 8px 10px 16px;
+    padding: 8px;
+    padding-left: 8px;
     display: block;
 
--webkit-transition: background-color .1s;
-   -moz-transition: background-color .1s;
-     -o-transition: background-color .1s;
-        transition: background-color .1s;
+
+
 }
 
-#cssmenu ul ul a:hover {background-color: rgb(240,240,240); }
+#cssmenu ul ul a:hover{
+
+    border-left: 4px solid #33b5e5;
+    padding: 10px 8px 10px 26px;
+    padding-left: 18px;
+
+
+}
 
 
 #cssmenu ul ul ul {
+    display:none;
     visibility: hidden;
     opacity: 0;
     position: absolute;
     top: -16px;
-    left: 206px;
+    left: 180px;
     padding: 16px 0 20px 0;
     background-color: rgb(250,250,250);
     text-align: left;
     width: 160px;
--webkit-transition: all .3s;
-   -moz-transition: all .3s;
-     -o-transition: all .3s;
-        transition: all .3s;
--webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-        border-radius: 5px;
--webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
-   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
-        box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+
 }
 
 
-#cssmenu ul ul > li:hover > ul { opacity: 1; left: 196px; visibility: visible;}
+
+#cssmenu ul ul > li:hover > ul { display:block; opacity: 1; left: 180px; visibility: visible;}
 
 
-#cssmenu ul ul a:hover{
-    background-color: #33b5e5;
-    color: rgb(240,240,240);
-}
+
 
 
   #menu-icon {

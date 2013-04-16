@@ -4560,6 +4560,16 @@ input[type="submit"].btn.btn-mini {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
+
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+
+  background-color: rgb(35,35,35);
   width: 940px;
 }
 
@@ -4569,9 +4579,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+ /* -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
      -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);*/
 }
 
 .navbar-fixed-bottom {
@@ -4782,8 +4792,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .navbar-inner {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: rgb(35,35,35);
+//  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+//  background-color: rgb(35,35,35);
  }
 
 .navbar-inverse .brand,
