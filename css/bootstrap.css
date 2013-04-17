@@ -223,12 +223,15 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url(../img/back_stripe.png);
+  background-repeat: repeat;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+
 }
+
+
 
 a {
   color: #0088cc;

@@ -131,7 +131,13 @@
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
+
+    background-image: url(../stripes.gif);
+    background-repeat: repeat;
     width: 1170px;
+
+    box-shadow: 0px 0px 10px 5px white;
+
   }
   .span12 {
     width: 1170px;

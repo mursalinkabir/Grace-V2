@@ -23,105 +23,68 @@
         background-color: #bbb;
     }
 
-#cssmenu ul { margin: 0; padding: 0;
- display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    }
-#cssmenu li { padding: 0;
- display: -webkit-box;
-    display: -moz-box;
-    display: box;
- clear: both;
-        float: none;
-        margin: 5px 0 5px 10px;
-
-}
-#cssmenu a { margin: 0; padding: 0;
- display: -webkit-box;
-    display: -moz-box;
-    display: box;}
-#cssmenu ul {list-style: none;
- display: -webkit-box;
-    display: -moz-box;
-
-    box-orient: vertical;
--webkit-box-orient: vertical;
--moz-box-orient: vertical;
-
-
-    display: box;
-      width: auto;
-
- //       position: static;
-
-        border: none;
-        background: inherit;
-}
-#cssmenu a {text-decoration: none;}
+#cssmenu ul { margin: 0; padding: 0;display:block;}
+#cssmenu li { margin: 0; padding: 0; display:block;}
+#cssmenu a { display:block; margin: 0; padding: 0;}
+#cssmenu ul {list-style: none;display:block;}
+#cssmenu a {text-decoration: none;display:block; color: rgb(50,50,50);}
 #cssmenu {
-    height:auto;
-    right: 7px;
-    clear: both;
-    color: rgb(220,220,220);
-    position: absolute;
-    top: 45px;
-    width: auto;
-    z-index: 10000;
-    padding: 5px;
-    background: rgb(35,35,35);
-    border: solid 1px #999;
-    display: none; /* visibility will be toggled with jquery */
 
-    background-color: rgb(35,35,35);
-    float: left;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+
+    text-shadow: none;
+
+    color: rgb(50,50,50);
+
+    display:none;
+    height: 60px; background-color: transparent;
+    /*box-shadow: 0px 2px 3px rgba(0,0,0,.4);*/
+    float: right;
+     font-family: 'Yanone Kaffeesatz', sans-serif;
 
     }
 
 
 #cssmenu > ul > li {
-    border-radius: 5px;
-
-    height:auto;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
+    display: block;
+    width: 160px;
+    height: 60px;
     text-transform: uppercase;
-    box-shadow: none;
-    border-top: none;
-    float: none;
-    -webkit-box-pack:center;
-    -moz-box-pack:center;
-    box-pack:center;
-     box-orient: vertical;
--webkit-box-orient: vertical;
--moz-box-orient: vertical;
-    padding-left: 0px;
- //   position: relative;
-margin: 0px 0 0px 0px;
--webkit-transition: none;
-   -moz-transition: none;
-     -o-transition: none;
-        transition: none;
+
+
+
+
+ border-bottom: 6px solid transparent;
+
+    float: left;
+
+    position: relative;
+
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
 
 
 }
 
 #cssmenu > ul > li:hover{
 
-    box-shadow: none;
-
-    background-repeat: no-repeat;
-    float: none;
-   padding-left: 0px;
-//    position: relative;
 
 
--webkit-transition: none;
-   -moz-transition: none;
-     -o-transition: none;
-        transition: none;
+    height: 100px;
+
+
+    border-bottom: 6px solid #33b5e5;
+    background-image: none;
+    background-color: rgb(250,250,250);
+
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+
+
+
 
 
 }
@@ -129,38 +92,33 @@ margin: 0px 0 0px 0px;
 
 #cssmenu > ul > li > a {
 
- font: inherit;
-        background: none;
-         display: -webkit-box;
-    display: -moz-box;
-    display: box;
-        padding: 0;
-        color: #666;
-        border: none;
+   display: block;
+
+    color: rgb(50,50,50);
+    height: 100px;
+
+
 
     font-size: 20px;
 
+    padding: 10px 20px 0px 20px;
 
--webkit-transition: none;
-   -moz-transition: none;
-     -o-transition: none;
-        transition: none;
 }
 
+#cssmenu > ul > li > a  img{
 
-#cssmenu span.menu-subtitle{
+    padding: 5px;
+   display: block;
 
-    display: block;
     float: left;
-    clear: both;
+    width:25px;
+    height:auto;
 
 
 }
 
-#cssmenu > ul > li > a > img{
+#cssmenu > ul > li:hover > a  img{
 
-
-    display: none;
 
 
 
@@ -168,169 +126,152 @@ margin: 0px 0 0px 0px;
 
 }
 
-#cssmenu > ul > li:hover > a > img{
+#cssmenu .iconwrapper
+{
 
-    display: none;
-
+   display: block;
+   float: left;
 
 }
 
 #cssmenu > ul > li > a > span{
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    color: white;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
+   display: block;
+    text-align: center;
+    padding: 5px;
+     float: left;
 
-    -webkit-transition: color 0.5s;
-   -moz-transition: color 0.5s;
-     -o-transition: color 0.5s;
-        transition: color 0.5s;
 
 }
 
 #cssmenu > ul > li:hover > a > span{
 
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    color: white;
-    background-color: transparent;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
 
-   -webkit-transition: color 0.5s;
-   -moz-transition: color 0.5s;
-     -o-transition: color 0.5s;
-        transition: color 0.5s;
+
+
 
 }
 
 
-#cssmenu > ul > li > a:hover {color: rgb(35,35,35); }
+#cssmenu > ul > li > a > span.menu-subtitle{
 
+    text-shadow: none;
+    display: block;
+    float: left;
+    color: transparent;
+    clear: both;
+    padding-left: 40px;
+    text-align: left;
+   font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    text-transform: none;
+
+    -webkit-transition: color 0.9s;
+    -moz-transition: color 0.9s;
+    transition: color 0.9s;
+
+
+}
+
+#cssmenu > ul > li:hover > a > span.menu-subtitle{
+
+    color: rgb(50,50,50);
+
+
+
+
+     -webkit-transition: color 0.9s;
+    -moz-transition: color 0.9s;
+    transition: color 0.9s;
+
+}
 
 #cssmenu > ul > li > ul {
-     display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    opacity: 1;
-    visibility: visible;
-    padding: 0px 10px 0px 0px;
-    background-color: rgb(40,40,40);
+    left: 0px;
+    display: none;
+    opacity: 0.0;
+//    visibility: hidden;
+    padding: 16px 0 20px 0;
+    background-color: rgb(250,250,250);
     text-align: left;
     position: relative;
-    top: 0px;
-    left: 0px;
-    margin-left: 0px;
-    width: auto;
--webkit-transition: none;
-   -moz-transition: none;
-     -o-transition: none;
-        transition: none;
--webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-        border-radius: 0px;
--webkit-box-shadow: none;
-   -moz-box-shadow: none;
-        box-shadow: none;
+
+    -webkit-transition: opacity 0.9s ease-in-out;
+    -moz-transition: opacity 0.9s ease-in-out;
+    transition: opacity 0.9s ease-in-out;
+
+    width: 160px;
+
+
 }
 
 #cssmenu > ul > li:hover > ul {
-     display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    opacity: 1;
-     padding: 0px 10 20px 0;
-    top: 0px;
-    visibility: visible;
+
+
+    opacity: 1.0;
+    display:inline-block;
+ //   visibility: visible;
+
+    -webkit-transition: opacity 0.9s ease-in-out;
+    -moz-transition: opacity 0.9s ease-in-out;
+    transition: opacity 0.9s ease-in-out;
 }
 
-#cssmenu > ul > li > ul:before{
-    content: '';
-     display: none;
-    border-color: transparent transparent rgb(250,250,250) transparent;
-    border-style: solid;
-    border-width: 10px;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    margin-left: -10px;
-}
 
-#cssmenu > ul ul > li {
-     display: -webkit-box;
-    display: -moz-box;
-    display: box;
-//    position: relative;
-}
+
+
+#cssmenu > ul ul > li { display:block; position: relative; border-left: 4px solid transparent;}
+#cssmenu > ul ul > li:hover { border-left: 4px solid #33b5e5; background-image: url(../stripes.gif);
+    background-repeat: all;}
 
 #cssmenu ul ul a{
-    color: #33b5e5;
+
     text-transform: none;
     font-size: 17px;
-    background-color: inherit;
-    padding: 5px 8px 5px 16px;
-     display: -webkit-box;
-    display: -moz-box;
-    display: box;
-     -webkit-box-flex:1;
-    -moz-box-flex:1;
-    box-flex:1;
+    width: 185px;
+   padding: 10px 8px 10px 26px;
 
--webkit-transition: background-color .1s;
-   -moz-transition: background-color .1s;
-     -o-transition: background-color .1s;
-        transition: background-color .1s;
+    display: block;
+
+
+
 }
 
+#cssmenu ul ul a:hover{
 
+
+
+
+
+
+}
 
 
 #cssmenu ul ul ul {
-     display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    visibility: visible;
+    display:none;
+    visibility: hidden;
     opacity: 0;
-//  position: absolute;
+    position: absolute;
     top: -16px;
-    left: 206px;
+    left: 180px;
     padding: 16px 0 20px 0;
-    background-color: rgb(35,35,35);
+    background-color: rgb(250,250,250);
     text-align: left;
-    width: auto;
--webkit-transition: all .3s;
-   -moz-transition: all .3s;
-     -o-transition: all .3s;
-        transition: all .3s;
--webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-        border-radius: 5px;
--webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
-   -moz-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
-        box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+    width: 160px;
+
 }
 
 
-#cssmenu ul ul > li:hover > ul { opacity: 1; left: 196px; visibility: visible;}
+
+#cssmenu ul ul > li:hover > ul { display:block; opacity: 1; left: 180px; visibility: visible;}
 
 
-#cssmenu ul ul a:hover{
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
 
-    -webkit-box-flex:1;
-    -moz-box-flex:1;
-    box-flex:1;
 
-    background-color: #33b5e5;
-    color: rgb(240,240,240);
+
+#menu-icon {
+
+      display: block; /* show menu icon */
 }
 
 
