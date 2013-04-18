@@ -8,6 +8,8 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+ @import url("http://fonts.googleapis.com/css?family=Denk+One");
+
 .clearfix {
   *zoom: 1;
 }
@@ -132,13 +134,53 @@
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
 
-    background-image: url(../stripes.gif);
-    background-repeat: repeat;
+
     width: 1170px;
 
-    box-shadow: 0px 0px 10px 5px white;
 
   }
+
+  .container#nav
+  {
+     background-image: url(../stripes.gif);
+      background-repeat: repeat;
+      box-shadow: 0px 0px 10px 5px white;
+
+  }
+
+  .container#footer-label
+  {
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 30px;
+
+      margin-bottom: 30px;
+
+
+  }
+
+  .container#footer-label span
+  {
+    color: #44c6f6;
+    text-shadow: 0px 0px 4px white;
+
+    background-image: url(../img/back_stripe.png);
+
+    padding: 20px;
+
+    text-shadow: 0px 0px 2px #33b5e5;
+    font-family: 'Denk One', sans-serif;
+
+
+  }
+
+  .footer-label{
+
+      background-image: url(../stripes.gif);
+  }
+
+
   .span12 {
     width: 1170px;
   }
