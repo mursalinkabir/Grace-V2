@@ -1,0 +1,307 @@
+
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab");
+
+#features{
+
+		display: -moz-box;
+		display: -webkit-box;
+
+		display: -o-box;
+		display: box;
+
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-o-box-orient: horizontal;
+		box-orient: horizontal;
+
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+		-o-box-flex:1;
+		box-flex:1;
+
+
+
+	}
+
+	.featurebox{
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -o-box;
+		display: box;
+
+//		background-color: #f5f5f5;
+
+		margin: 10px;
+
+		-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+
+
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+		-o-box-flex:1;
+		box-flex:1;
+
+
+	}
+
+	.featurebox:hover{
+
+		background-color: #eeeeee;
+
+		-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+
+	}
+
+	.featurebox-img-wrap{
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -o-box;
+		display: box;
+
+
+		-webkit-box-pack:center;
+		-moz-box-pack:center;
+		-o-box-pack:center;
+		box-pack:center;
+
+
+
+
+
+	}
+
+	.featurebox-text{
+
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -o-box;
+		display: box;
+
+
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+		-o-box-flex:1;
+		box-flex:1;
+
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-o-box-orient: vertical;
+		box-orient: vertical;
+
+
+
+
+	}
+
+
+
+	.featurebox-head{
+
+text-decoration: none;
+		font-size: 25px;
+		font-family: 'Roboto Slab', serif;
+		color: #33b5e5;
+		text-shadow: 1px 1px 2px #33b5e5;
+		padding: 10px;
+
+	}
+
+	.featurebox-description{
+
+		padding: 10px;
+
+	}
+
+
+
+
+
+
+@media screen and (min-width: 805px) {
+
+.featurebox{
+
+		margin-top: 20px;
+
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-o-box-orient: vertical;
+		box-orient: vertical;
+}
+
+
+#features{
+
+
+
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-o-box-orient: horizontal;
+		box-orient: horizontal;
+
+
+	}
+
+	.featurebox .featurebox-img-wrap
+	{
+
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	-webkit-transform: scale(1.0,1.0);
+	-moz-transform: scale(1.0,1.0);
+	-o-transform: scale(1.0,1.0);
+	-ms-transform: scale(1.0,1.0);
+	-khtml-transform: scale(1.0,1.0);
+	transform: scale(1.0,1.0);
+	}
+
+	.featurebox:hover .featurebox-img-wrap
+	{
+
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	-webkit-transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+	-khtml-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+	}
+
+
+	.featurebox-head{
+
+
+		text-align: center;
+
+	}
+
+	.featurebox-description{
+
+
+		text-align: center;
+
+	}
+
+	.featurebox .featurebox-more{
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -o-box;
+		display: box;
+
+		padding: 10px;
+//		background-color: #f5f5f5;
+		-webkit-box-pack:end;
+		-moz-box-pack:end;
+		-o-box-pack:end;
+		box-pack:end;
+
+			-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+
+
+	}
+
+	.featurebox:hover .featurebox-more{
+
+
+
+		background-color: #33b5e5;
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+		-o-box-flex:1;
+		box-flex:1;
+
+			-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+
+
+	}
+
+	.featurebox-more a{
+
+		color: white;
+	}
+
+}
+
+@media screen and (max-width: 805px) {
+
+
+	.featurebox{
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-o-box-orient: horizontal;
+		box-orient: horizontal;
+}
+
+#features{
+
+
+
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-o-box-orient: vertical;
+		box-orient: vertical;
+
+
+	}
+
+	.featurebox .featurebox-more{
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -o-box;
+		display: box;
+
+
+		-webkit-box-flex:1;
+		-moz-box-flex:1;
+		-o-box-flex:1;
+		box-flex:1;
+
+		padding: 0px 10px 10px 10px;
+
+		-webkit-box-pack:start;
+		-moz-box-pack:start;
+		-o-box-pack:start;
+		box-pack:start;
+
+	}
+
+	.featurebox-img-wrap{
+
+		display: block;
+	}
+
+
+
+
+
+	.featurebox-more a{
+
+		color: #33b5e5;
+	}
+
+
+}
