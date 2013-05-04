@@ -3,6 +3,7 @@
 
 #features{
 
+
 		display: -moz-box;
 		display: -webkit-box;
 
@@ -30,7 +31,11 @@
 		display: -o-box;
 		display: box;
 
-//		background-color: #f5f5f5;
+		background-color: #fff;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-o-box-orient: vertical;
+		box-orient: vertical;
 
 		margin: 10px;
 
@@ -45,6 +50,8 @@
 		-o-box-flex:1;
 		box-flex:1;
 
+		border-radius: 10px;
+
 
 	}
 
@@ -58,6 +65,8 @@
 	transition: all 0.5s;
 
 	}
+
+
 
 	.featurebox-img-wrap{
 
@@ -78,7 +87,7 @@
 
 	}
 
-	.featurebox-text{
+	.featurebox-header{
 
 
 		display: -webkit-box;
@@ -128,20 +137,29 @@ text-decoration: none;
 
 @media screen and (min-width: 805px) {
 
+
+
+
+
 .featurebox{
+
 
 		margin-top: 20px;
 
-		-webkit-box-orient: vertical;
-		-moz-box-orient: vertical;
-		-o-box-orient: vertical;
-		box-orient: vertical;
+
+		box-shadow: 0px -3px 7px white;
+
 }
+
+
 
 
 #features{
 
 
+
+	position: relative;
+	top: -100px;
 
 		-webkit-box-orient: horizontal;
 		-moz-box-orient: horizontal;
@@ -153,6 +171,10 @@ text-decoration: none;
 
 	.featurebox .featurebox-img-wrap
 	{
+
+
+	margin-top: 40px;
+	padding: 20px;
 
 	-moz-transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
@@ -181,6 +203,12 @@ text-decoration: none;
 	-ms-transform: scale(1.2,1.2);
 	-khtml-transform: scale(1.2,1.2);
 	transform: scale(1.2,1.2);
+	}
+
+	.featurebox img{
+
+		height: 64px;
+		width: 64px;
 	}
 
 
@@ -248,12 +276,7 @@ text-decoration: none;
 @media screen and (max-width: 805px) {
 
 
-	.featurebox{
-		-webkit-box-orient: horizontal;
-		-moz-box-orient: horizontal;
-		-o-box-orient: horizontal;
-		box-orient: horizontal;
-}
+
 
 #features{
 
@@ -263,6 +286,26 @@ text-decoration: none;
 		-moz-box-orient: vertical;
 		-o-box-orient: vertical;
 		box-orient: vertical;
+
+
+	}
+	.featurebox img{
+
+		height: 48px;
+		width: 48px;
+	}
+
+	.featurebox-header{
+
+
+
+		line-height: 67px;
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-o-box-orient: horizontal;
+		box-orient: horizontal;
+
+
 
 
 	}
@@ -290,7 +333,7 @@ text-decoration: none;
 	}
 
 	.featurebox-img-wrap{
-
+		padding: 10px;
 		display: block;
 	}
 
@@ -301,6 +344,11 @@ text-decoration: none;
 	.featurebox-more a{
 
 		color: #33b5e5;
+	}
+
+	.featurebox-description{
+
+		padding: 0px 10px 10px 10px;
 	}
 
 
