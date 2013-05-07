@@ -8,6 +8,7 @@
 
         <!-- Le styles -->
 
+        <link href="css/circle.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
 
         <link href="css/top_nav.css" rel="stylesheet">
@@ -25,9 +26,12 @@
 
 
 
+
         <!--<script src="js/jquery-1.9.1.min.js"></script>-->
         <script src="js/slider/jquery-1.7.1.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.72835.js"></script>
+<script type="text/javascript" src="js/jquery.circlemouse.js"></script>
 
         <script type="text/javascript">
 jQuery(document).ready(function($){
@@ -286,6 +290,54 @@ jQuery(document).ready(function($){
     </div>
 
 </div>
+
+
+
+    <!--Circle begin-->
+    <div class="container">
+
+        <div >
+          <p class="message">Your browser does not support the border-radius property!</p>
+        <div class="section">
+          <div class="normal-trigger-area">
+            <a href="#" id="circle2" class="ec-circle" style="background: #dda994 url(images/iphone.jpg) no-repeat center center;">
+              <h3>iPhone 5</h3>
+               <p>Loving it is easy<br>Thats why so many people love it</p>
+            </a>
+          </div>
+       </div>
+
+       </div>
+
+       <script type="text/javascript">
+            $(function() {
+
+        $('#circle2').circlemouse({
+          onMouseEnter  : function( el ) {
+
+            el.addClass('ec-circle-hover');
+
+          },
+          onMouseLeave  : function( el ) {
+
+            el.removeClass('ec-circle-hover');
+
+          },
+          onClick     : function( el ) {
+
+            alert('clicked');
+
+                   }
+                    });
+
+                      });
+        </script>
+
+
+    </div>
+
+
+
 
     <footer>
 
